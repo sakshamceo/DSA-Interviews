@@ -18,6 +18,6 @@ int main()
        }
        mp[i-nums[i]]++;
     }
-    cout<<combination-count<<endl;
+    cout<<combination-count<<endl; //total pairs - Good Pairs
 
 }
