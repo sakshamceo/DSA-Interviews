@@ -39,18 +39,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main()
-{ int j=1;
-    vector<int>v={0,1,1,2,2,3};
-    for(int i=1;i<v.size();i++)
+{ 
+    vector<int>v={1,1,1,2,2,3};
+    int j=1;
+    for(int i=1;i<v.size() && j<v.size() ;i++)
     { 
-        if(v[i-1]!=v[i])
+         if(v[i-1]!=v[i])
         {
             v[j]=v[i];
             j++;
         }
     }
-    for(auto x:v)
-   { 
-        cout<<x;
-    }
+    cout<<j<<endl;
+  for(int k=0;k<j;k++)
+  {
+    cout<<v[k];
+  }
 }
